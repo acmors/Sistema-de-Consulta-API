@@ -1,5 +1,9 @@
 package com.modelo.model;
 
+import org.springframework.beans.BeanUtils;
+
+import com.modelo.dto.ClienteDTO;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -26,12 +30,18 @@ public class Cliente {
 	private String cpf;
 	
 	@NotNull
-	private Integer telefone;
+	private String telefone;
 	
 	@NotNull
 	private Boolean status;
 	
+	public Cliente(ClienteDTO cliente) {
+		BeanUtils.copyProperties(cliente, this);
+	}
 	
+	public Cliente() {
+		
+	}
 
 	public Long getId() {
 		return id;
@@ -73,11 +83,11 @@ public class Cliente {
 		this.cpf = cpf;
 	}
 
-	public Integer getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(Integer telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 
