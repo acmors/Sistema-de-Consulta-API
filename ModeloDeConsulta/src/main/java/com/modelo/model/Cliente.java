@@ -99,5 +99,4 @@ public class Cliente {
 		this.status = status;
 	}
 	
-	
 }

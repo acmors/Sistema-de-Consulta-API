@@ -64,6 +64,8 @@ public class ClienteDTO {
 	public void setStatus(Boolean status) {
 		this.status = status;
 	}
+
+	
 	
 	
 }

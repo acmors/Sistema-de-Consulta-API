@@ -19,12 +19,17 @@ public class ClienteService {
 		clienteRepository.save(cliente);
 	}
 	
+	public ClienteDTO getClienteByID(Long id) {
+		return clienteRepository.findById(id)
+				.orElseThrow(() -> new);
+	}
+	
 	public List<ClienteDTO> getAllClientes(){
 		List<Cliente> clientes = clienteRepository.findAll();
 		return clientes.stream().map(ClienteDTO::new).toList();
 	}
 	
-	public ClienteDTO updateCliente(ClienteDTO clienteDTO) {
+	public ClienteDTO updateCliente(Long id, ClienteDTO clienteDTO) {
 		Cliente cliente = new Cliente(clienteDTO);
 		return new ClienteDTO(clienteRepository.save(cliente));
 	}

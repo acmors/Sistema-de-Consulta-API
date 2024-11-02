@@ -1,2 +1,6 @@
 1730508845937	Delete element
 1730509024621	Delete element
+1730570481216	Rename package 'com.modelo.exceptions'
+1730571880431	Rename package 'com.modelo.exception'
+1730572123854	Rename compilation unit 'IdNotFoundExeception.java'
+1730572154988	Rename package 'com.modelo.exeception'
