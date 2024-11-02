@@ -384,3 +384,37 @@
 2024-11-01 21:40:48,000 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-11-01 21:40:48,014 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-11-01 21:40:48,020 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 21:49:56,048 [Worker-18: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.modelo:ModeloDeConsulta:0.0.1-SNAPSHOT @ C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\pom.xml.
+2024-11-01 21:49:57,625 [Worker-18: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.3.5/spring-boot-starter-validation-3.3.5.pom
+2024-11-01 21:49:57,638 [Worker-18: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.3.5/spring-boot-starter-validation-3.3.5.pom
+2024-11-01 21:49:58,167 [Worker-18: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.3.5/spring-boot-starter-validation-3.3.5.jar
+2024-11-01 21:49:58,540 [Worker-18: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.3.5/spring-boot-starter-validation-3.3.5.jar
+2024-11-01 21:50:01,445 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:50:01,449 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:50:01,459 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 21:50:01,708 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.3.5/spring-boot-starter-validation-3.3.5-sources.jar
+2024-11-01 21:50:02,182 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/3.3.5/spring-boot-starter-validation-3.3.5-sources.jar
+2024-11-01 21:50:02,191 [Worker-13: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-validation:3.3.5
+2024-11-01 21:50:07,530 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 21:50:07,588 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:50:07,595 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 21:50:55,345 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 21:50:55,496 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:50:55,506 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 21:54:06,498 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 21:54:06,517 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:54:06,523 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 21:54:25,330 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 21:54:25,343 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:54:25,352 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 21:56:26,649 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-01 21:56:57,486 [Worker-8: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.modelo:ModeloDeConsulta:0.0.1-SNAPSHOT @ C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\pom.xml.
+2024-11-01 21:57:01,204 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 21:57:01,231 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:57:01,241 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 21:57:05,111 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 21:57:05,388 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:57:05,396 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 21:57:20,800 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 21:57:20,824 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 21:57:20,832 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
