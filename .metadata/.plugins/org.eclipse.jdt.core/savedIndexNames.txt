@@ -65,7 +65,6 @@ INDEX VERSION 1.134+C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\.metadata
 3817437998.index
 2300874019.index
 3562450558.index
-1250685209.index
 1834613602.index
 3620540976.index
 3569997673.index

@@ -445,3 +445,59 @@
 2024-11-01 22:46:37,752 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-11-01 22:46:37,765 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-11-01 22:46:37,772 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 22:48:29,644 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 22:48:29,663 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 22:48:29,669 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 22:48:43,462 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 22:48:43,473 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 22:48:43,479 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:26:17,766 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:26:17,780 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:26:17,785 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:29:28,667 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:29:28,682 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:29:28,689 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:31:39,565 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:31:39,579 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:31:39,586 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:33:30,796 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:33:30,807 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:33:30,812 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:36:36,957 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:36:36,983 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:36:37,011 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:36:38,282 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:36:38,293 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:36:38,298 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:40:42,993 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:40:43,017 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:40:43,024 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:41:32,632 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:41:32,648 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:41:32,654 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:41:34,878 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:41:34,907 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:41:34,915 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:42:24,984 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:42:25,018 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:42:25,024 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:43:17,676 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:43:17,689 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:43:17,694 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:44:32,788 [Worker-36: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.modelo:ModeloDeConsulta:0.0.1-SNAPSHOT @ C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\pom.xml.
+2024-11-01 23:44:35,687 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:44:35,690 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:44:35,699 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:44:38,129 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:44:38,169 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:44:38,175 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:46:29,771 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:46:29,786 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:46:29,791 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:47:10,116 [Worker-44: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.modelo:ModeloDeConsulta:0.0.1-SNAPSHOT @ C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\pom.xml.
+2024-11-01 23:47:11,798 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:47:11,801 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:47:11,809 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
+2024-11-01 23:47:13,475 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-01 23:47:13,528 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-01 23:47:13,534 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\marcos\Desktop\projeto\Modelo-de-Consulta\ModeloDeConsulta\src\test\resources
