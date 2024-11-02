@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import com.modelo.dto.ClienteDTO;
 import com.modelo.model.Cliente;
 import com.modelo.repository.ClienteRepository;
 
@@ -14,15 +14,23 @@ public class ClienteService {
 	@Autowired
 	private ClienteRepository clienteRepository;
 	
-	public Cliente createCliente(Cliente cliente) {
-		return clienteRepository.save(cliente);
+	public void createCliente(ClienteDTO clienteDTO) {
+		Cliente cliente = new Cliente(clienteDTO);
+		clienteRepository.save(cliente);
 	}
 	
-	public List<Cliente> getAllClientes(){
-		
+	public List<ClienteDTO> getAllClientes(){
+		List<Cliente> clientes = clienteRepository.findAll();
+		return clientes.stream().map(ClienteDTO::new).toList();
 	}
 	
-	public Cliente updateCliente(Long id, Cliente cliente) {
-		
+	public ClienteDTO updateCliente(Long id, ClienteDTO clienteDTO) {
+		Cliente cliente = new Cliente(clienteDTO);
+		return new ClienteDTO(clienteRepository.save(cliente));
+	}
+	
+	public void delete(Long id) {
+		Cliente cliente = clienteRepository.findById(id).get();
+		clienteRepository.delete(cliente);
 	}
 }
