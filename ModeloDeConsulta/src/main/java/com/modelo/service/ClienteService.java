@@ -6,9 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.modelo.dto.ClienteDTO;
+import com.modelo.exception.DuplicateEntryException;
 import com.modelo.exception.IdNotFoundException;
 import com.modelo.model.Cliente;
 import com.modelo.repository.ClienteRepository;
+import com.modelo.validator.ClienteValidator;
 
 @Service
 public class ClienteService {
@@ -16,9 +18,16 @@ public class ClienteService {
 	@Autowired
 	private ClienteRepository clienteRepository;
 	
-	public void createCliente(ClienteDTO clienteDTO) {
+	public ClienteDTO createCliente(ClienteDTO clienteDTO) {
+		
+		if (clienteRepository.existsByCnpj(clienteDTO.getCnpj()) || clienteRepository.existsByCpf(clienteDTO.getCpf())) {
+			throw new DuplicateEntryException("CNPJ/CPF já cadastrados");
+		}
+		
+		ClienteValidator.validateClienteData(	clienteDTO.getRazaoSocial(), clienteDTO.getCnpj(), clienteDTO.getCpf(), clienteDTO.getTelefone());
 		Cliente cliente = new Cliente(clienteDTO);
-		clienteRepository.save(cliente);
+		Cliente savedCliente = clienteRepository.save(cliente);
+		return new ClienteDTO(savedCliente);
 	}
 	
 	public ClienteDTO getClienteByID(Long id) {

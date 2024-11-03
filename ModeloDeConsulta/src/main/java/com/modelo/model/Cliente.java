@@ -35,12 +35,24 @@ public class Cliente {
 	@NotNull
 	private Boolean status;
 	
+	@NotNull
+	private String email;
+	
 	public Cliente(ClienteDTO cliente) {
 		BeanUtils.copyProperties(cliente, this);
 	}
 	
 	public Cliente() {
 		
+	}
+	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public Long getId() {

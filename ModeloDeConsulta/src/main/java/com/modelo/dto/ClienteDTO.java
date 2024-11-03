@@ -12,6 +12,7 @@ public class ClienteDTO {
 	private String cnpj;
 	private String cpf;
 	private String telefone;
+	private String email;
 	private Boolean status;
 	
 	public ClienteDTO(Cliente cliente) {
@@ -22,6 +23,14 @@ public class ClienteDTO {
 		
 	}
 	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public Long getId() {
 		return id;
 	}

@@ -8,4 +8,6 @@ import com.modelo.model.Cliente;
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Long>{
 
+	boolean existsByCnpj(String cnpj);
+	boolean existsByCpf(String cpj);
 }
