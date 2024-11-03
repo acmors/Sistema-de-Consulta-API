@@ -15,7 +15,23 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="jakarta.annotation.PostConstruct"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+    <fullyQualifiedTypeName name="com.modelo.exeception.IdNotFoundExeception"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.CnpjNotFoundException"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.CpfNotFoundException"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.DuplicateEntryException"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.InvalidEmailFormatException"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.InvalidNameException"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.InvalidDocumentException"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.InvalidPhoneNumberException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.InvalidStatusException"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="com.modelo.exception.IdNotFoundException"/>
 </qualifiedTypeNameHistroy>

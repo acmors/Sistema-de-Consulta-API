@@ -4,7 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.modelo.dto.ClienteDTO;
+import com.modelo.exception.IdNotFoundException;
 import com.modelo.model.Cliente;
 import com.modelo.repository.ClienteRepository;
 
@@ -20,8 +22,10 @@ public class ClienteService {
 	}
 	
 	public ClienteDTO getClienteByID(Long id) {
-		return clienteRepository.findById(id)
-				.orElseThrow(() -> new);
+		Cliente cliente = clienteRepository.findById(id)
+				.orElseThrow(() -> new IdNotFoundException());
+				
+		return new ClienteDTO(cliente);
 	}
 	
 	public List<ClienteDTO> getAllClientes(){
@@ -30,8 +34,18 @@ public class ClienteService {
 	}
 	
 	public ClienteDTO updateCliente(Long id, ClienteDTO clienteDTO) {
-		Cliente cliente = new Cliente(clienteDTO);
-		return new ClienteDTO(clienteRepository.save(cliente));
+		Cliente clienteExist = clienteRepository.findById(id)
+				.orElseThrow(() -> new IdNotFoundException());
+		
+		clienteExist.setRazaoSocial(clienteDTO.getRazaoSocial());
+		clienteExist.setNomeFantasia(clienteDTO.getNomeFantasia());
+		clienteExist.setCnpj(clienteDTO.getCnpj());
+		clienteExist.setCpf(clienteDTO.getCpf());
+		clienteExist.setTelefone(clienteDTO.getTelefone());
+		clienteExist.setStatus(clienteDTO.getStatus());
+		
+		return new ClienteDTO(clienteRepository.save(clienteExist));
+		
 	}
 	
 	public void delete(Long id) {

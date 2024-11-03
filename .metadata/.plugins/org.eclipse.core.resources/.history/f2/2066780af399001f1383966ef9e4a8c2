@@ -1,0 +1,37 @@
+package com.modelo.handler;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+import com.modelo.exception.CnpjNotFoundException;
+import com.modelo.exception.CpfNotFoundException;
+import com.modelo.exception.DuplicateEntryException;
+import com.modelo.exception.IdNotFoundException;
+
+@ControllerAdvice
+public class RestExceptionHandler extends ResponseEntityExceptionHandler{
+	
+	@ExceptionHandler(IdNotFoundException.class)
+	public ResponseEntity<String> NotFoundExceptionsHandler(Exception exception){
+		String message;
+		
+		if(exception instanceof IdNotFoundException) {
+			message = "Id not found.";
+		} else if (exception instanceof CnpjNotFoundException) {
+			message = "CNPJ not found.";
+		} else if (exception instanceof CpfNotFoundException){
+			message = "CPF not found.";
+		} else {
+			message = "Resource not found";
+		}
+		
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(message);
+	}
+	
+	@ExceptionHandler(DuplicateEntryException.class)
+	public ResponseEntity<String> duplacateEntryHandler(DuplicateEntryException exception){
+		return ResponseEntity.status(HttpStatus.CONFLICT).body("Duplicate entry found.");
+	}
+}
