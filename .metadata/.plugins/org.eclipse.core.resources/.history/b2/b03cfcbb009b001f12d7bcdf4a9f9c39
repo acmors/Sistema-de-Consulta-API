@@ -1,0 +1,105 @@
+package com.modelo.dto;
+
+import org.springframework.beans.BeanUtils;
+
+import com.modelo.model.Cliente;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+
+public class ClienteDTO {
+	
+	private Long id;
+
+	@NotEmpty(message = "Razão social não pode estar vazia.")
+    private String razaoSocial;
+
+    @NotEmpty(message = "Nome fantasia não pode estar vazio.")
+    private String nomeFantasia;
+
+    @NotNull
+    @Pattern(regexp = "\\d{14}", message = "CNPJ deve ter 14 dígitos.")
+    private String cnpj;
+
+    @NotNull
+    @NotEmpty(message = "CPF não pode estar vazio.")
+    @Pattern(regexp = "\\d{11}", message = "CPF deve ter 11 dígitos.")
+    private String cpf;
+
+    @NotNull
+    @NotEmpty(message = "Telefone não pode estar vazio.")
+    @Pattern(regexp = "^(\\(\\d{2}\\)\\s?)?(\\d{4,5}-\\d{4})$", message = "Formato de telefone inválido.")
+    private String telefone;
+
+    @NotNull
+    private Boolean status;
+
+    @NotNull(message = "O email não deve ser nulo")
+    @Email(message = "O email deve ser válido")
+    private String email;
+	
+	public ClienteDTO(Cliente cliente) {
+		BeanUtils.copyProperties(cliente, this);
+	}
+	
+	public ClienteDTO() {
+		
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getRazaoSocial() {
+		return razaoSocial;
+	}
+	public void setRazaoSocial(String razaoSocial) {
+		this.razaoSocial = razaoSocial;
+	}
+	public String getNomeFantasia() {
+		return nomeFantasia;
+	}
+	public void setNomeFantasia(String nomeFantasia) {
+		this.nomeFantasia = nomeFantasia;
+	}
+	public String getCnpj() {
+		return cnpj;
+	}
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public Boolean getStatus() {
+		return status;
+	}
+	public void setStatus(Boolean status) {
+		this.status = status;
+	}
+
+	
+	
+	
+}

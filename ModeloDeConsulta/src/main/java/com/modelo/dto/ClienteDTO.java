@@ -1,20 +1,45 @@
 package com.modelo.dto;
 
+import org.hibernate.validator.constraints.br.CNPJ;
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.beans.BeanUtils;
 
 import com.modelo.model.Cliente;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+
 public class ClienteDTO {
 	
 	private Long id;
-	private String razaoSocial;
-	private String nomeFantasia;
-	private String cnpj;
-	private String cpf;
-	private String telefone;
-	private String email;
-	private Boolean status;
-	
+
+//	@NotBlank(message = "Razão social não pode estar vazia.")
+    private String razaoSocial;
+//
+//	@NotBlank(message = "Nome fantasia não pode estar vazio.")
+    private String nomeFantasia;
+
+//	@NotBlank
+//    @CNPJ(message = "CNPJ deve ter 14 dígitos.")
+    private String cnpj;
+
+//	@NotBlank(message = "CPF não pode estar vazio.")
+//    @CPF(message = "CPF deve ter 11 dígitos.")
+    private String cpf;
+
+
+//	@NotBlank(message = "Telefone não pode estar vazio.")
+//    @Pattern(regexp = "^(\\(\\d{2}\\)\\s?)?(\\d{4,5}-\\d{4})$", message = "Formato de telefone inválido.")
+    private String telefone;
+
+//	@NotNull
+    private Boolean status;
+
+//	@NotBlank(message = "O email não deve ser nulo")
+//    @Email(message = "O email deve ser válido")
+    private String email;
 	public ClienteDTO(Cliente cliente) {
 		BeanUtils.copyProperties(cliente, this);
 	}
