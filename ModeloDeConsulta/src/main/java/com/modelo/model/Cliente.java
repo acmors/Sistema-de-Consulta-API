@@ -22,30 +22,30 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-//	@NotBlank(message = "Razão social não pode estar vazia.")
+	@NotBlank(message = "Razão social não pode estar vazia.")
     private String razaoSocial;
-//
-//	@NotBlank(message = "Nome fantasia não pode estar vazio.")
+
+	@NotBlank(message = "Nome fantasia não pode estar vazio.")
     private String nomeFantasia;
 
-//	@NotBlank
-//    @CNPJ(message = "CNPJ deve ter 14 dígitos.")
+	@NotBlank
+    @CNPJ(message = "CNPJ deve ter 14 dígitos.")
     private String cnpj;
 
-//	@NotBlank(message = "CPF não pode estar vazio.")
-//    @CPF(message = "CPF deve ter 11 dígitos.")
+	@NotBlank(message = "CPF não pode estar vazio.")
+    @CPF(message = "CPF deve ter 11 dígitos.")
     private String cpf;
 
-//
-//	@NotBlank(message = "Telefone não pode estar vazio.")
-//    @Pattern(regexp = "^(\\(\\d{2}\\)\\s?)?(\\d{4,5}-\\d{4})$", message = "Formato de telefone inválido.")
+
+	@NotBlank(message = "Telefone não pode estar vazio.")
+    @Pattern(regexp = "^(\\(\\d{2}\\)\\s?)?(\\d{4,5}-\\d{4})$", message = "Formato de telefone inválido.")
     private String telefone;
 
-//	@NotNull
+	@NotNull
     private Boolean status;
 
-//	@NotBlank(message = "O email não deve ser nulo")
-//    @Email(message = "O email deve ser válido")
+	@NotBlank(message = "O email não deve ser nulo")
+    @Email(message = "O email deve ser válido")
     private String email;
 	
 	public Cliente(ClienteDTO cliente) {

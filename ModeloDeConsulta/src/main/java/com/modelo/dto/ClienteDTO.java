@@ -12,42 +12,42 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
 public class ClienteDTO {
-	
+
 	private Long id;
 
-//	@NotBlank(message = "Razão social não pode estar vazia.")
-    private String razaoSocial;
-//
-//	@NotBlank(message = "Nome fantasia não pode estar vazio.")
-    private String nomeFantasia;
+	@NotBlank(message = "Razão social não pode estar vazia.")
+	private String razaoSocial;
 
-//	@NotBlank
-//    @CNPJ(message = "CNPJ deve ter 14 dígitos.")
-    private String cnpj;
+	@NotBlank(message = "Nome fantasia não pode estar vazio.")
+	private String nomeFantasia;
 
-//	@NotBlank(message = "CPF não pode estar vazio.")
-//    @CPF(message = "CPF deve ter 11 dígitos.")
-    private String cpf;
+	@NotBlank
+	@CNPJ(message = "CNPJ deve ter 14 dígitos.")
+	private String cnpj;
 
+	@NotBlank(message = "CPF não pode estar vazio.")
+	@CPF(message = "CPF deve ter 11 dígitos.")
+	private String cpf;
 
-//	@NotBlank(message = "Telefone não pode estar vazio.")
-//    @Pattern(regexp = "^(\\(\\d{2}\\)\\s?)?(\\d{4,5}-\\d{4})$", message = "Formato de telefone inválido.")
-    private String telefone;
+	@NotBlank(message = "Telefone não pode estar vazio.")
+	@Pattern(regexp = "^(\\(\\d{2}\\)\\s?)?(\\d{4,5}-\\d{4})$", message = "Formato de telefone inválido.")
+	private String telefone;
 
-//	@NotNull
-    private Boolean status;
+	@NotNull
+	private Boolean status;
 
-//	@NotBlank(message = "O email não deve ser nulo")
-//    @Email(message = "O email deve ser válido")
-    private String email;
+	@NotBlank(message = "O email não deve ser nulo")
+	@Email(message = "O email deve ser válido")
+	private String email;
+
 	public ClienteDTO(Cliente cliente) {
 		BeanUtils.copyProperties(cliente, this);
 	}
-	
+
 	public ClienteDTO() {
-		
+
 	}
-	
+
 	public String getEmail() {
 		return email;
 	}
@@ -59,47 +59,57 @@ public class ClienteDTO {
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getRazaoSocial() {
 		return razaoSocial;
 	}
+
 	public void setRazaoSocial(String razaoSocial) {
 		this.razaoSocial = razaoSocial;
 	}
+
 	public String getNomeFantasia() {
 		return nomeFantasia;
 	}
+
 	public void setNomeFantasia(String nomeFantasia) {
 		this.nomeFantasia = nomeFantasia;
 	}
+
 	public String getCnpj() {
 		return cnpj;
 	}
+
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
+
 	public String getCpf() {
 		return cpf;
 	}
+
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
 	public String getTelefone() {
 		return telefone;
 	}
+
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+
 	public Boolean getStatus() {
 		return status;
 	}
+
 	public void setStatus(Boolean status) {
 		this.status = status;
 	}
 
-	
-	
-	
 }
