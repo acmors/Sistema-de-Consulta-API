@@ -17,6 +17,11 @@ public class ClienteService {
 	@Autowired
 	private ClienteRepository clienteRepository;
 
+	public ClienteService(ClienteRepository clienteRepository) {
+		this.clienteRepository = clienteRepository;
+		
+	}
+
 	public ClienteDTO createCliente(ClienteDTO clienteDTO) {
 
 	    if (clienteRepository.existsByCnpj(clienteDTO.getCnpj())

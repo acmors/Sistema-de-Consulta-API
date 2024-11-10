@@ -1,0 +1,18 @@
+package com.modelo.validator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.modelo.model.Cliente;
+import com.modelo.repository.ClienteRepository;
+
+@Component
+public class ClienteValidator {
+
+	@Autowired
+	private ClienteRepository clienteRepository;
+	
+	public void validate(Cliente cliente) {
+		
+	}
+}

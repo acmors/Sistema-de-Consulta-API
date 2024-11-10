@@ -1,5 +1,0 @@
-package com.modelo.repository;
-
-public interface ClienteRepository {
-
-}
