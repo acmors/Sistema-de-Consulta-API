@@ -1,0 +1,20 @@
+package com.modelo.response;
+
+public class ClienteResponse {
+
+	private Long id;
+	
+	private String razaoSocial;
+
+	private String nomeFantasia;
+
+	private String cnpj;
+
+	private String cpf;
+
+	private String telefone;
+
+	private Boolean status;
+
+	private String email;
+}

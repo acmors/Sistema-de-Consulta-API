@@ -22,41 +22,40 @@ public class ClienteService {
 		
 	}
 
-	public ClienteDTO createCliente(ClienteDTO clienteDTO) {
+	public Cliente createCliente(Cliente cliente) {
 
-	    if (clienteRepository.existsByCnpj(clienteDTO.getCnpj())
-	            || clienteRepository.existsByCpf(clienteDTO.getCpf())) {
+	    if (clienteRepository.existsByCnpj(cliente.getCnpj())
+	            || clienteRepository.existsByCpf(cliente.getCpf())) {
 	        throw new DuplicateEntryException("CNPJ/CPF já cadastrados");
 	    }
 
 	   
-	    Cliente cliente = new Cliente(clienteDTO);
 	    Cliente savedCliente = clienteRepository.save(cliente);
-	    return new ClienteDTO(savedCliente);
+	    return new Cliente(savedCliente);
 	}
 
-	public ClienteDTO getClienteByID(Long id) {
+	public Cliente getClienteByID(Long id) {
 		Cliente cliente = clienteRepository.findById(id).orElseThrow(() -> new IdNotFoundException());
 
-		return new ClienteDTO(cliente);
+		return cliente;
 	}
 
-	public List<ClienteDTO> getAllClientes() {
+	public List<Cliente> getAllClientes() {
 		List<Cliente> clientes = clienteRepository.findAll();
-		return clientes.stream().map(ClienteDTO::new).toList();
+		return clientes.stream().map(Cliente::new).toList();
 	}
 
-	public ClienteDTO updateCliente(Long id, ClienteDTO clienteDTO) {
+	public Cliente updateCliente(Long id,  Cliente cliente) {
 		Cliente clienteExist = clienteRepository.findById(id).orElseThrow(() -> new IdNotFoundException());
 
-		clienteExist.setRazaoSocial(clienteDTO.getRazaoSocial());
-		clienteExist.setNomeFantasia(clienteDTO.getNomeFantasia());
-		clienteExist.setCnpj(clienteDTO.getCnpj());
-		clienteExist.setCpf(clienteDTO.getCpf());
-		clienteExist.setTelefone(clienteDTO.getTelefone());
-		clienteExist.setStatus(clienteDTO.getStatus());
+		clienteExist.setLegalName(cliente.getLegalName());
+		clienteExist.setCorporateName(cliente.getCorporateName());
+		clienteExist.setCnpj(cliente.getCnpj());
+		clienteExist.setCpf(cliente.getCpf());
+		clienteExist.setPhone(cliente.getPhone());
+		clienteExist.setStatus(cliente.getStatus());
 
-		return new ClienteDTO(clienteRepository.save(clienteExist));
+		return new Cliente(clienteRepository.save(clienteExist));
 
 	}
 

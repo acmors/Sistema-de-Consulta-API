@@ -1,0 +1,5 @@
+package com.modelo.response;
+
+public class ClienteResponse {
+
+}

@@ -1,19 +1,9 @@
 package com.modelo.model;
 
-import org.hibernate.validator.constraints.br.CNPJ;
-import org.hibernate.validator.constraints.br.CPF;
-import org.springframework.beans.BeanUtils;
-
-import com.modelo.dto.ClienteDTO;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
 
 @Entity
 public class Cliente {
@@ -22,47 +12,23 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotBlank(message = "Razão social não pode estar vazia.")
-    private String razaoSocial;
+    private String legalName;
 
-	@NotBlank(message = "Nome fantasia não pode estar vazio.")
-    private String nomeFantasia;
+    private String corporateName;
 
-	@NotBlank
-    @CNPJ(message = "CNPJ deve ter 14 dígitos.")
     private String cnpj;
 
-	@NotBlank(message = "CPF não pode estar vazio.")
-    @CPF(message = "CPF deve ter 11 dígitos.")
     private String cpf;
 
+    private String phone;
 
-	@NotBlank(message = "Telefone não pode estar vazio.")
-    @Pattern(regexp = "^(\\(\\d{2}\\)\\s?)?(\\d{4,5}-\\d{4})$", message = "Formato de telefone inválido.")
-    private String telefone;
-
-	@NotNull
     private Boolean status;
 
-	@NotBlank(message = "O email não deve ser nulo")
-    @Email(message = "O email deve ser válido")
     private String email;
 	
-	public Cliente(ClienteDTO cliente) {
-		BeanUtils.copyProperties(cliente, this);
-	}
 	
 	public Cliente() {
 		
-	}
-	
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
 	}
 
 	public Long getId() {
@@ -73,20 +39,20 @@ public class Cliente {
 		this.id = id;
 	}
 
-	public String getRazaoSocial() {
-		return razaoSocial;
+	public String getLegalName() {
+		return legalName;
 	}
 
-	public void setRazaoSocial(String razaoSocial) {
-		this.razaoSocial = razaoSocial;
+	public void setLegalName(String legalName) {
+		this.legalName = legalName;
 	}
 
-	public String getNomeFantasia() {
-		return nomeFantasia;
+	public String getCorporateName() {
+		return corporateName;
 	}
 
-	public void setNomeFantasia(String nomeFantasia) {
-		this.nomeFantasia = nomeFantasia;
+	public void setCorporateName(String corporateName) {
+		this.corporateName = corporateName;
 	}
 
 	public String getCnpj() {
@@ -105,12 +71,12 @@ public class Cliente {
 		this.cpf = cpf;
 	}
 
-	public String getTelefone() {
-		return telefone;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public Boolean getStatus() {
@@ -120,5 +86,14 @@ public class Cliente {
 	public void setStatus(Boolean status) {
 		this.status = status;
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	
 }
