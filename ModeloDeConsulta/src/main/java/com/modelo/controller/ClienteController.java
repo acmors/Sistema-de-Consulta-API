@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.modelo.dto.ClienteDTO;
+import com.modelo.mapper.ClienteMapper;
+import com.modelo.model.Cliente;
+import com.modelo.request.ClienteRequest;
+import com.modelo.response.ClienteResponse;
 import com.modelo.service.ClienteService;
 
 import jakarta.validation.Valid;
@@ -26,21 +29,27 @@ public class ClienteController {
 	@Autowired
 	private ClienteService clienteService;
 	
-	@GetMapping
-	public List<ClienteDTO> getAllClientes(){
-		return clienteService.getAllClientes();
-	}
 	
 	@PostMapping
-	public ResponseEntity<ClienteDTO> createCliente(@Valid @RequestBody ClienteDTO clienteDTO) {
-	    ClienteDTO createdCliente = clienteService.createCliente(clienteDTO);
-	    return new ResponseEntity<>(createdCliente, HttpStatus.CREATED);
+	public ResponseEntity<ClienteResponse> createCliente(@Valid @RequestBody ClienteRequest request) {
+		Cliente cliente = ClienteMapper.toCliente(request);
+		Cliente savedCliente = clienteService.createCliente(cliente);
+		ClienteResponse clienteResponse = ClienteMapper.toClienteResponse(savedCliente);
+		return ResponseEntity.status(HttpStatus.CREATED).body(clienteResponse);
 	}
 	
 	@PutMapping("/{id}")
-	public ResponseEntity<ClienteDTO> update(@PathVariable("id") Long id,  @RequestBody ClienteDTO clienteDTO) {
-		ClienteDTO cliente = clienteService.updateCliente(id, clienteDTO);
-		return new ResponseEntity<>(cliente ,HttpStatus.OK);
+	public ResponseEntity<ClienteResponse> update(@PathVariable("id") Long id, @Valid  @RequestBody ClienteRequest request) {
+		
+		Cliente updatedCliente = ClienteMapper.toCliente(request);
+		Cliente savedCliente = clienteService.updateCliente(id, updatedCliente);
+		ClienteResponse response = ClienteMapper.toClienteResponse(savedCliente);
+		return ResponseEntity.ok(response);
+	}
+	
+	@GetMapping
+	public List<Cliente> getAllClientes(){
+		return clienteService.getAllClientes();
 	}
 	
 	@DeleteMapping("/{id}")

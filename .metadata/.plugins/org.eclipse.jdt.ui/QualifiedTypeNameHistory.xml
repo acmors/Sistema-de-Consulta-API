@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.modelo.repository.ClienteRepository"/>
     <fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -42,4 +41,8 @@
     <fullyQualifiedTypeName name="jakarta.validation.constraints.NotEmpty"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Pattern"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Email"/>
+    <fullyQualifiedTypeName name="com.modelo.request.ClienteRequest"/>
+    <fullyQualifiedTypeName name="com.modelo.response.ClienteResponse"/>
+    <fullyQualifiedTypeName name="com.modelo.mapper.ClienteMapper"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 </qualifiedTypeNameHistroy>

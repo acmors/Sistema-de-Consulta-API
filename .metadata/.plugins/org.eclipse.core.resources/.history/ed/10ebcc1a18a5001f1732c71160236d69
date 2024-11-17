@@ -1,0 +1,33 @@
+package com.modelo.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.modelo.model.Cliente;
+import com.modelo.repository.ClienteRepository;
+
+@Service
+public class ClienteService {
+
+	
+	private final ClienteRepository clienteRepository;
+
+	public ClienteService(ClienteRepository clienteRepository) {
+		this.clienteRepository = clienteRepository;
+		
+	}
+
+	public Cliente createCliente(Cliente cliente) {
+		return clienteRepository.save(cliente);
+	}
+	
+	public List<Cliente> getAllClientes(){
+		return clienteRepository.findAll();
+	}
+	
+	public Cliente getById(Long id) {
+		return clienteRepository.getById(id)
+				.orElseThrow(() -> new resourcenotfoundexception())
+	}
+}
